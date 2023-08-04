@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Readonly Inputs</title>
+    <style>
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .input-group label {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .input-group input {
+            flex-grow: 1;
+        }
+
+        .form-container {
+            border: 2px solid lightgray;
+            padding: 20px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="input-group">
+            <label for="id">ID:</label>
+            <input type="text" id="id" value="123" readonly>
+        </div>
+
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="John Doe" readonly>
+        </div>
+    </div>
+</body>
+</html>
